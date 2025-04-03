@@ -1,0 +1,28 @@
+python -m venv .venv
+
+.\.venv\Scripts\Activate
+
+pip install streamlit
+pip install fastapi
+pip install uvicorn 
+pip install pandas 
+pip install numpy 
+pip install plotly 
+pip install statsmodels
+
+# tells all packages and their versions
+pip list
+
+streamlit run app.py
+
+# To terminate virtual environment
+deactivate
+
+To check:
+#start the backend server
+#it will install all required lib and files (pip install python-multipart)
+uvicorn backend:app --host 0.0.0.0 --port 8000 --reload
+
+
+
+
